@@ -1,0 +1,47 @@
+{
+  "name": "chatnest-api",
+  "version": "1.0.0",
+  "description": "WhatsApp/Instagram-style direct messaging REST API with JWT auth, text and image messages, read receipts, blocking and Socket.IO live updates.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate:up": "migrate-mongo up",
+    "migrate:down": "migrate-mongo down",
+    "migrate:status": "migrate-mongo status",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "chat",
+    "express",
+    "mongodb",
+    "socket.io",
+    "rest-api"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "helmet": "^8.3.0",
+    "joi": "^17.13.9",
+    "jsonwebtoken": "^9.0.3",
+    "migrate-mongo": "^14.0.7",
+    "mongoose": "^8.24.8",
+    "morgan": "^1.12.1",
+    "multer": "^2.5.0",
+    "socket.io": "^4.8.4",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.4.3",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.2"
+  }
+}
